@@ -24,6 +24,16 @@ html {
   white-space: nowrap;
   width: 1px;
 }
+/* ---------------Utility Classes----------------- */
+.container{
+  width:80vw;
+  max-width: 960px;
+  margin: 40px auto;
+
+}
+
+
+/* ---------------Global Styles----------------- */
 
 body{
   font-family: "Share Tech", sans-serif;
@@ -31,10 +41,10 @@ body{
 }
 
 header.primary{
-  background-color:#7EAED9;
-  color:#ffffff;
+  background-color:#0688C5;
+  color:#f2f2f2;
   text-align: center;
-  text-shadow: 1px 1px #000000;
+  text-shadow: 2px 2px #000000;
   padding: 20px 40px;
 }
 
@@ -57,10 +67,37 @@ header.primary p.subtitle{
 
 nav.primary ul{
   padding:0;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:50px;
 }
 nav.primary ul li{
   list-style-type: none;
+  flex:1;
+  
 }
 nav.primary ul li a{
+  background-color: rgba(0,0,0,.3);
+  padding:5px 5px;
+  display: block;
+  border:6px double #000;
+  border-radius: 15px;
+  transition: .5s;
 
 }
+nav.primary ul li a:hover{
+  background-color: rgba(0,0,0,.8);
+  
+}
+
+
+/*---------------Media Queries-----------*/
+@media screen and (max-width:500px){
+  nav.primary ul{
+  flex-direction: column;
+  justify-content: center;
+  gap:10px;
+}
+}
+
