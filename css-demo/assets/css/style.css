@@ -11,6 +11,10 @@ html {
 *:after {
   box-sizing: inherit;
 }
+/* ------------Responsive Images------------- */
+img{
+  max-width: 100%;
+}
 
 /* Skip link utility: hidden until focused */
 .visually-hidden {
@@ -91,13 +95,57 @@ nav.primary ul li a:hover{
   
 }
 
+#content h2{
+  color:#00568A;
+  border-bottom: 1px solid black;
+}
+
+#content p{
+  line-height:1.8;
+}
+
+#blog{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:15px;
+  flex-wrap: wrap;
+}
+
+figure{
+  margin:0;
+}
+
+#blog .post{
+  box-shadow: 0 4px 8px rgba(0,0,0,.6);
+  padding:10px;
+  font-size:.8rem;
+  flex:1;
+}
+
+#blog time.post-date, #blog figcaption{
+  text-transform: uppercase;
+  font-size:.8rem;
+}
+
+#blog a{
+  color:#0688C5;
+}
+
+#blog h2{
+  flex: 0 0 100%;
+  color: #00568A;
+  border-bottom: 1px solid black;
+}
 
 /*---------------Media Queries-----------*/
 @media screen and (max-width:500px){
   nav.primary ul{
   flex-direction: column;
-  justify-content: center;
   gap:10px;
+}
+#blog{
+  flex-direction: column;
 }
 }
 
