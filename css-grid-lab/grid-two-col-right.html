@@ -32,41 +32,34 @@
       gap: 20px;
       max-width: 80vw;
       margin: 20px auto;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: 
+      "header header header header"
+      "content content content sidebar"
+      "blog blog blog sidebar"
+      "footer footer footer footer"
+       ;
     }
 
     header.primary{
-      grid-column-start:1;
-      grid-column-end:4;
-      grid-row-start: 1;
+      grid-area: header;
       
     }
 
     #content{
-      grid-column-start: 1;
-      grid-column-end: 3;
-      grid-row-start: 2;
-      grid-row-end:3;
+      grid-area: content;
     }
 
     #blog{
-      grid-column-start: 1;
-      grid-column-end:3;
-      grid-row-start:3;
-      grid-row-end:4;
+      grid-area: blog;
     }
 
     aside{
-      grid-column-start: 3;
-      grid-column-end: 4;
-      grid-row-start:2;
-      grid-row-end:4;
+      grid-area: sidebar;
     }
 
     footer.primary{
-      grid-column-start: 1;
-      grid-column-end:4;
+      grid-area: footer;
       
       
     }
