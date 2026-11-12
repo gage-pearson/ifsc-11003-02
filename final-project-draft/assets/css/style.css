@@ -1,0 +1,134 @@
+
+
+/* ----- Utility Styles ---- */
+
+.container {
+  width: 80vw;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.img-right {
+  float: right;
+  margin: 10px 0 10px 20px;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+  max-width:33%;
+}
+
+.img-left {
+  float: left;
+  margin: 10px 20px 10px 0;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+.img-center {
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+/* ---- Responsive Images ----*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    margin: 10px;
+    padding: 0;
+    background-color: #F2D7B6;
+
+}
+
+header.primary{
+    background-color: #555947;
+    padding: 50px;
+    
+}
+
+header.primary h1{
+    color: white;
+    font-size: 2.5rem;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header.primary nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding:0;
+    gap:50px;
+}
+
+
+header.primary nav ul li{
+  list-style-type: none;
+  flex:1;
+  
+}
+header.primary nav ul li a{
+  background-color:#8C521F;
+  padding:5px 5px;
+  display: block;
+  border:6px double #000;
+  border-radius: 15px;
+  transition: .5s;
+  color: white;
+  text-align: center;
+
+}
+header.primary nav ul li a:hover{
+  background-color: #C19A6B;
+  
+}
+
+#banner{
+    background-color: #593F39;
+    padding: 50px;
+    text-align: center;
+    margin:50px 50px;
+    color:#C19A6B;
+}
+
+#featured{
+   display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:15px;
+  flex-wrap: wrap;
+  padding-bottom:40px;
+  border-bottom:1px solid black;
+}
+#featured h2, #featured h3{
+    color:#555947;
+    margin-left:10px;
+    
+}
+
+#featured h2{
+    flex:0 0 100%;
+
+}
+
+#featured article{
+    flex:1;
+    background-color:#C19A6B;
+    padding:10px;
+    border-radius: 15px;
+    border: solid 1px #000;
+    
+}
+
+#explore h2, #explore h3{
+    color:#555947;
+    margin-left:10px;
+    
+}
