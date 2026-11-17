@@ -46,14 +46,18 @@ body {
 
 /* ----- Header and Footer ----- */
 
-header.primary,
+header.primary{
+    background-color: #203d33;
+    color: #f7f3e8;
+}
+
 footer.primary {
     background-color: #203d33;
     color: #f7f3e8;
 }
 
 header.primary {
-    padding: 50px;
+    padding: 10px;
 }
 
 header.primary h1 {
@@ -146,12 +150,16 @@ header.primary nav ul li a:hover {
 
 #explore {
     background-color: #e7ede4;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #b8c6b9;
 }
 
 #explore div.grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    column-gap: 2rem;
+    column-rule: 1px solid #203d33;
 }
 
 #explore article {
@@ -168,6 +176,7 @@ header.primary nav ul li a:hover {
 #before {
     border-top: 1px solid #b8c6b9;
     text-align: center;
+
 }
 
 #before ul{
